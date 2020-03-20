@@ -1,0 +1,11 @@
+{
+  "checkInPage":{
+    "title":"Yeni insanlarla tanışmak için Check-in yap!",
+    "subTitle":"Yaptığın Check-in 6 saat görünür olacak."
+  },
+  "profilePage":{
+    "settingsButton":"Profili Düzenle",
+    "aboutMe":"Hakkımda",
+    "checkInPlaces":"Check-in Yapılan Yerler"
+  }
+}

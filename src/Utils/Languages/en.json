@@ -1,0 +1,11 @@
+{
+  "checkInPage":{
+    "title":"Check-in to meet new people!",
+    "subTitle":"Your Check-in will be visible for 6 hours."
+  },
+  "profilePage":{
+    "settingsButton":"Edit Profile",
+    "aboutMe":"About Me",
+    "checkInPlaces":"Checked-in Places"
+  }
+}
