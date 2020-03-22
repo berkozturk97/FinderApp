@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
-import React from 'react';
-import { Text } from 'react-native';
+import React, { Fragment } from 'react';
+import { Text, View, SafeAreaView } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
@@ -97,14 +97,20 @@ function LoginStackScreen() {
 export default class App extends React.Component {
   render() {
     return (
-      <NavigationContainer>
-        <Stack.Navigator>
-          {Store.userToken == null ? (
-            <Stack.Screen name="Login" component={LoginStackScreen} options={{ headerShown: false }} />
-          ) : (
-              <Stack.Screen name="MainTabNavigator" component={MainTabNavigator} options={{ headerShown: false }} />)}
-        </Stack.Navigator>
-      </NavigationContainer>
+      <Fragment>
+        <SafeAreaView style={{ flex: 0, backgroundColor: '#1A2430' }} />
+        <SafeAreaView style={{ flex: 1, backgroundColor: '#212A39' }}>
+          <NavigationContainer>
+            <Stack.Navigator>
+              {Store.userToken == null ? (
+                <Stack.Screen name="Login" component={LoginStackScreen} options={{ headerShown: false }} />
+              ) : (
+                  <Stack.Screen name="MainTabNavigator" component={MainTabNavigator} options={{ headerShown: false }} />)}
+            </Stack.Navigator>
+          </NavigationContainer>
+        </SafeAreaView>
+      </Fragment>
+
     );
   }
 }

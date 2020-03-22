@@ -6,7 +6,7 @@ const languageEN = require('../Languages/en.json');
 
 class MenuStore {
   @observable resource =
-    RNLocalize.getLocales()[0].languageCode === 'tr' ? languageTR : languageTR;
+    RNLocalize.getLocales()[0].languageCode === 'tr' ? languageTR : languageEN;
   @observable userToken = null;
 
   setUserToken = token => {

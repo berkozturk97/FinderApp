@@ -55,6 +55,7 @@ const styles = StyleSheet.create({
   titleStyle: {
     fontSize: 16,
     fontFamily: 'AvenirNextLTPro-Bold',
+    alignSelf: 'center',
     color: 'white',
   },
   titleStyleSecondary: {
